@@ -1,0 +1,178 @@
+<!DOCTYPE html><!--implement the html structure-->
+<html lang="en"><!--language is english-->
+<head>
+  <meta charset="UTF-8"><!--this charset encoding to the UTF-8-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive to the large and small devices-->
+  <title>flavourpizza - Home Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"><!--css file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css"><!--linked main css file -->
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success"><!--bootstrap class for styling to background color-->
+    <a class="navbar-brand text-white" href="index.html">
+        <img src="logo3.png" alt="" style="height: 30px; margin-right:-10px;"> FlavourPIZZA<!--lofo withn the image and the aligment -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--this is basically toggler button for the responsivness and the smoothness of the website-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav"><!--this div tag is use for collapsization of the navbar-->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search" id="searchInput"><!--this is search food button which search item in the website-->
+            <button class="btn btn-outline-light my-2 my-sm-0" type="button" onclick="searchFood()"><!--this is search button-->
+              <i class="fas fa-search"></i><!--this is search icon in the search button-->
+            </button>
+          </form>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="index.html">Home</a><!--home link-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="menu.html">Menu</a><!--menu link-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About us</a><!--about us link-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">Contact us</a><!--contact us link-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="checkout.html">Basket</a><!--basket link-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="form.html">Sign In</a><!--sign in link-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero text-center">
+    <div class="container"><!--stores main item-->
+      <h1 class="display-4">Welcome to Flavourpizza</h1><!--  main heading in big fonts-->
+      <p class="lead">Discover the varities of pizzas</p><!--sub heading-->
+      <a href="menu.html" class="btn btn-primary btn-lg">Explore more</a><!--expliore more works as a button and redirect to the menu page-->
+    </div>
+  </div>
+
+  <!-- Featured Recipes Section -->
+<section class="recommendations py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Recommendations</h2><!--recommendations for the user-->
+    <div class="row">
+      <div class="col-md-4 mb-4"><!--column for first item -->
+        <div class="card h-100"><!--hold item details in this card-->
+          <div class="card-img-top-wrapper">
+            <img src="pizza3.jpg" height="400%" class="card-img-top" alt="Dish Image"><!--image link -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text">The classic Margherita Pizza is a simple yet delicious favorite that never goes out of style.</p>
+            <a href="menu.html" class="btn btn-primary">Show More</a><!--link for more details-->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4"><!--column for second item-->
+        <div class="card h-100"><!--hold item details in this card-->
+          <div class="card-img-top-wrapper">
+            <img src="pizza1.jpg" height="475" class="card-img-top" alt="Food Image"><!--image link-->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Vegitarian pizza</h5>
+            <p class="card-text">A delightful mix of fresh vegetables for a healthier option.</p>
+            <a href="menu.html" class="btn btn-primary">Show More</a><!--link more details-->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-img-top-wrapper">
+            <img src="pizza8.jpg" class="card-img-top" alt="Meal Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hawaiian Pizza</h5>
+            <p class="card-text">A sweet and savory combination featuring pineapple and ham.</p>
+            <a href="menu.html" class="btn btn-primary">Show More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- About Section -->
+  <section class="py-5 about-section"><!--padding was applied to this section-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Welcome to Flavourpizza!</p>
+          <p>At Flavourpizza, we are passionate about bringing the joy of delicious and diverse pizza experiences right to your fingertips. Our mission is to provide wide range of the pizzas and its flavour to all over world.</p>
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="chef.jpg" class="img-fluid" alt="Chef Image"><!--chef image-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4"><!--test is centered in this footer-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Flavourpizza</h5>
+          <p>Since 2023</p>
+          <div>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-facebook-f"></i></a><!--facebook icon-->
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-instagram"></i></a><!--instagram icon-->
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-github"></i></a><!--github icon-->
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i></a><!--youtube-->
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="contact.html" class="text-decoration-none">Contact us</a></li><!--contact us linkede-->
+            <li><a href="livechat.html" class="text-decoration-none">Live chat</a></li><!--live chat will be linked-->
+            <li><a href="FAQ.html" class="text-decoration-none">FAQ section</a></li><!--live chat will be linked-->
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="menu.html" class="text-decoration-none">Menu</a></li><!--menu linked-->
+            <li><a href="findus.html" class="text-decoration-none">Find us</a></li><!--find us linked-->
+            <li><a href="blog.html" class="text-decoration-none">Blog</a></li><!--blog us linked-->
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="tac.html" class="text-decoration-none">Terms & Conditions</a></li><!--terms and conditions linked-->
+            <li><a href="privacypolicy.html" class="text-decoration-none">Privacy Policy</a></li><!--privacy policy linked-->
+            <li><a href="cookie.html" class="text-decoration-none">Cookie Policy</a></li><!--cookie policy linked-->
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p>&copy; 2023-2024 Flavourpizza. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

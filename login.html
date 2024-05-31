@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavourpizza - Log In</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand text-white" href="test.html">
+      <img src="logo3.png" alt="" style="height: 30px; margin-right:-10px;"> FlavourPIZZA
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="checkout.html">Basket</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="form.html">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="card login-card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Log In</h3>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Log In</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="form.html">Register here</a></p>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Flavourpizza</h5>
+        <p>Since 2023</p>
+        <div>
+          <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h5>Support</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="contact.html" class="text-decoration-none">Contact us</a></li>
+          <li><a href="#" class="text-decoration-none">Live chat</a></li>
+          <li><a href="#" class="text-decoration-none">FAQ section</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="menu.html" class="text-decoration-none">Menu</a></li>
+          <li><a href="findus.html" class="text-decoration-none">Find us</a></li>
+          <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="tac.html" class="text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="privacypolicy.html" class="text-decoration-none">Privacy Policy</a></li>
+          <li><a href="cookie.html" class="text-decoration-none">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <p>&copy; 2023-2024 Flavourpizza. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Fetch form inputs
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+
+    // Validate email
+    if (email.validity.typeMismatch || email.value.trim() === '') {
+      email.classList.add('is-invalid');
+    } else {
+      email.classList.remove('is-invalid');
+    }
+
+    // Validate password
+    if (password.value.trim() === '') {
+      password.classList.add('is-invalid');
+    } else {
+      password.classList.remove('is-invalid');
+    }
+
+    // Check if form is valid
+    if (!name.classList.contains('is-invalid') && !email.classList.contains('is-invalid') && !password.classList.contains('is-invalid')) {
+      
+      alert('Form submitted successfully!');
+    
+    }
+
+     // If validation passes, redirect to home page
+     window.location.href = 'index.html';
+  });
+</script>
+</body>
+</html>

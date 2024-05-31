@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavourpizza - Contact Us</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand text-white" href="index.html">
+      <img src="logo3.png" alt="" style="height: 30px; margin-right:-10px;"> FlavourPIZZA
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="checkout.html">Basket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="form.html">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Us Section -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <p>Feel free to reach out to us for any inquiries or feedback. We'd love to hear from you!</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope"></i> Email: contact@flavourpizza.com</li>
+            <li><i class="fas fa-phone"></i> Phone: +1 (000) 456-7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> Address: 1190 Mission Street, 33 8th St, San Francisco, CA 94103</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nameInput">Your Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+              <div class="invalid-feedback">
+                Please provide your name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Your Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+              <div class="invalid-feedback">
+                Please provide a valid email.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="messageTextarea">Message</label>
+              <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Enter your message" required></textarea>
+              <div class="invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Flavourpizza</h5>
+          <p>Since 2023</p>
+          <div>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="contact.html" class="text-decoration-none">Contact us</a></li>
+            <li><a href="livechat.html" class="text-decoration-none">Live chat</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ section</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="menu.html" class="text-decoration-none">Menu</a></li>
+            <li><a href="findus.html" class="text-decoration-none">Find us</a></li>
+            <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="tac.html" class="text-decoration-none">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="cookie.html" class="text-decoration-none">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p>&copy; 2023-2024 Flavourpizza. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="contact.js"></script>
+
+</body>
+</html>

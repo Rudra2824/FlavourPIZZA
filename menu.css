@@ -1,0 +1,63 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer styles */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer p,
+footer a {
+  color: #adb5bd;
+}
+
+footer a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.footer-links a {
+  color: white;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+  color: #80e471;
+}
+
+/* Style for the cart drawer */
+.cart-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.cart-drawer.open {
+  width: 400px;
+}
+
+.cart-drawer .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.cart-drawer .cart-content {
+  padding: 20px;
+}

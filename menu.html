@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavourpizza - Menu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand text-white" href="index.html">
+      <img src="logo3.png" alt="" style="height: 30px; margin-right:-10px;"> FlavourPIZZA
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="button" onclick="searchFood()">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="checkout.html">Basket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="form.html">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza1.jpg" class="card-img-top pizza-img" height="435" alt="Margherita Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <p class="card-text">Classic Margherita with fresh tomatoes, mozzarella cheese, basil, and olive oil.</p>
+              <p class="card-text"><strong>Ingredients:</strong> Tomatoes, Mozzarella, Basil, Olive Oil.</p>
+              <p class="card-text"><strong>Price:</strong> $10.99</p>
+              <button class="btn btn-success" onclick="addToCart('Margherita Pizza', 10.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza2.jpg" class="card-img-top pizza-img" height="435" alt="Pepperoni Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Pepperoni Pizza</h5>
+              <p class="card-text">A delicious Pepperoni Pizza loaded with pepperoni slices and mozzarella cheese.</p>
+              <p class="card-text"><strong>Ingredients:</strong> Pepperoni, Mozzarella, Tomato Sauce.</p>
+              <p class="card-text"><strong>Price:</strong> $12.99</p>
+              <button class="btn btn-success" onclick="addToCart('Pepperoni Pizza', 12.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza3.jpg" class="card-img-top pizza-img" height="435" alt="Vegetarian Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Vegetarian Pizza</h5>
+              <p class="card-text">A delightful mix of fresh vegetables including bell peppers, onions.</p>
+              <p class="card-text"><strong>Ingredients:</strong> Bell Peppers, Onions, Olives, Mozzarella, Tomato Sauce.</p>
+              <p class="card-text"><strong>Price:</strong> $11.99</p>
+              <button class="btn btn-success" onclick="addToCart('Vegetarian Pizza', 11.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza4.jpg" class="card-img-top pizza-img" height="435" alt="BBQ Chicken Pizza">
+            <div class="card-body">
+              <h5 class="card-title">BBQ Chicken Pizza</h5>
+              <p class="card-text">Savory BBQ chicken with onions, cilantro, and mozzarella cheese.</p>
+              <p class="card-text"><strong>Ingredients:</strong> BBQ Chicken, Onions, Cilantro, Mozzarella.</p>
+              <p class="card-text"><strong>Price:</strong> $13.99</p>
+              <button class="btn btn-success" onclick="addToCart('BBQ Chicken Pizza', 13.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza5.jpg" class="card-img-top pizza-img" height="435" alt="Thin Crust Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Thin Crust Pizza</h5>
+              <p class="card-text">Crispy thin crust pizza topped with a blend of cheeses and fresh herbs.</p>
+              <p class="card-text"><strong>Ingredients:</strong> Mozzarella, Cheddar, Parmesan, Fresh Herbs.</p>
+              <p class="card-text"><strong>Price:</strong> $9.99</p>
+              <button class="btn btn-success" onclick="addToCart('Thin Crust Pizza', 9.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pizza6.jpg" class="card-img-top pizza-img" height="435" alt="Four Cheese Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Four Cheese Pizza</h5>
+              <p class="card-text">A delightful blend of mozzarella, cheddar, parmesan, and gorgonzola cheeses.</p>
+              <p class="card-text"><strong>Ingredients:</strong> Mozzarella, Cheddar, Parmesan, Gorgon.</p>
+              <p class="card-text"><strong>Price:</strong> $14.99</p>
+              <button class="btn btn-success" onclick="addToCart('Four Cheese Pizza', 14.99)">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="cart-drawer">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <div class="cart-content">
+      <h2>Cart</h2>
+      <div id="cartItems"></div>
+      <button class="btn btn-primary btn-block mt-4" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Flavourpizza</h5>
+          <p>Since 2023</p>
+          <div>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none mr-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="contact.html" class="text-decoration-none">Contact us</a></li>
+            <li><a href="#" class="text-decoration-none">Live chat</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ section</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="menu.html" class="text-decoration-none">Menu</a></li>
+            <li><a href="findus.html" class="text-decoration-none">Find us</a></li>
+            <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="tac.html" class="text-decoration-none">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="cookie.html" class="text-decoration-none">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p>&copy; 2023-2024 Flavourpizza. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
